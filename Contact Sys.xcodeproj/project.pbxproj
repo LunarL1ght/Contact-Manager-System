@@ -11,6 +11,7 @@
 		266EAC412ACF312E00E68AEC /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC402ACF312E00E68AEC /* Name.cpp */; };
 		266EAC442ACF4E5E00E68AEC /* Address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC432ACF4E5E00E68AEC /* Address.cpp */; };
 		266EAC482ACF575800E68AEC /* Contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC472ACF575800E68AEC /* Contact.cpp */; };
+		266F4A322ADCE9880019E508 /* ContactManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266F4A312ADCE9880019E508 /* ContactManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		266EAC342ACF14C100E68AEC /* Contact Sys 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Contact Sys 1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EAC342ACF14C100E68AEC /* Contact Sys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Contact Sys"; sourceTree = BUILT_PRODUCTS_DIR; };
 		266EAC372ACF14C100E68AEC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		266EAC3E2ACF30DE00E68AEC /* Name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
 		266EAC402ACF312E00E68AEC /* Name.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Name.cpp; sourceTree = "<group>"; };
@@ -34,6 +35,8 @@
 		266EAC432ACF4E5E00E68AEC /* Address.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Address.cpp; sourceTree = "<group>"; };
 		266EAC462ACF574C00E68AEC /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		266EAC472ACF575800E68AEC /* Contact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Contact.cpp; sourceTree = "<group>"; };
+		266F4A2F2ADCE9540019E508 /* ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
+		266F4A312ADCE9880019E508 /* ContactManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContactManager.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,7 @@
 		266EAC2B2ACF14C100E68AEC = {
 			isa = PBXGroup;
 			children = (
-				266EAC362ACF14C100E68AEC /* Contact Sys 1 */,
+				266EAC362ACF14C100E68AEC /* Contact Sys */,
 				266EAC352ACF14C100E68AEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,20 +61,18 @@
 		266EAC352ACF14C100E68AEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				266EAC342ACF14C100E68AEC /* Contact Sys 1 */,
+				266EAC342ACF14C100E68AEC /* Contact Sys */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		266EAC362ACF14C100E68AEC /* Contact Sys 1 */ = {
+		266EAC362ACF14C100E68AEC /* Contact Sys */ = {
 			isa = PBXGroup;
 			children = (
 				266EAC372ACF14C100E68AEC /* main.cpp */,
-				266EAC492ACF576000E68AEC /* Contact */,
-				266EAC452ACF4E6900E68AEC /* Address */,
-				266EAC3F2ACF30F600E68AEC /* Name */,
+				266F4A302ADCE95B0019E508 /* ContactManager */,
 			);
-			path = "Contact Sys 1";
+			path = "Contact Sys";
 			sourceTree = "<group>";
 		};
 		266EAC3F2ACF30F600E68AEC /* Name */ = {
@@ -81,6 +82,7 @@
 				266EAC3E2ACF30DE00E68AEC /* Name.h */,
 			);
 			name = Name;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		266EAC452ACF4E6900E68AEC /* Address */ = {
@@ -90,6 +92,7 @@
 				266EAC422ACF4E4B00E68AEC /* Address.h */,
 			);
 			name = Address;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		266EAC492ACF576000E68AEC /* Contact */ = {
@@ -97,16 +100,28 @@
 			children = (
 				266EAC472ACF575800E68AEC /* Contact.cpp */,
 				266EAC462ACF574C00E68AEC /* Contact.h */,
+				266EAC3F2ACF30F600E68AEC /* Name */,
+				266EAC452ACF4E6900E68AEC /* Address */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		266F4A302ADCE95B0019E508 /* ContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				266F4A312ADCE9880019E508 /* ContactManager.cpp */,
+				266F4A2F2ADCE9540019E508 /* ContactManager.h */,
+				266EAC492ACF576000E68AEC /* Contact */,
+			);
+			name = ContactManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		266EAC332ACF14C100E68AEC /* Contact Sys 1 */ = {
+		266EAC332ACF14C100E68AEC /* Contact Sys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys 1" */;
+			buildConfigurationList = 266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys" */;
 			buildPhases = (
 				266EAC302ACF14C100E68AEC /* Sources */,
 				266EAC312ACF14C100E68AEC /* Frameworks */,
@@ -116,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = "Contact Sys 1";
+			name = "Contact Sys";
 			productName = "Contact Sys 1";
-			productReference = 266EAC342ACF14C100E68AEC /* Contact Sys 1 */;
+			productReference = 266EAC342ACF14C100E68AEC /* Contact Sys */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys 1" */;
+			buildConfigurationList = 266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				266EAC332ACF14C100E68AEC /* Contact Sys 1 */,
+				266EAC332ACF14C100E68AEC /* Contact Sys */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +175,7 @@
 			files = (
 				266EAC482ACF575800E68AEC /* Contact.cpp in Sources */,
 				266EAC412ACF312E00E68AEC /* Name.cpp in Sources */,
+				266F4A322ADCE9880019E508 /* ContactManager.cpp in Sources */,
 				266EAC442ACF4E5E00E68AEC /* Address.cpp in Sources */,
 				266EAC382ACF14C100E68AEC /* main.cpp in Sources */,
 			);
@@ -300,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys 1" */ = {
+		266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266EAC392ACF14C100E68AEC /* Debug */,
@@ -309,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys 1" */ = {
+		266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266EAC3C2ACF14C100E68AEC /* Debug */,

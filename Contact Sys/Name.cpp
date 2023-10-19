@@ -30,18 +30,21 @@ Name::Name(Name &name)
     last_name = name.getlName();
 }
 //overloader function for >> operator
-istream &operator>>(istream& in, Name& n)
+istream& operator>>(istream& in, Name& n)
 {
     
     string str;
     cout << "First Name: ";
+    in >> n.first_name;
 
-//fix
+//fixx
     cout << "Last Name: ";
+    in >> n.last_name;
 
-//fix
+//fixx
     cout << "Middle Name: ";
-//fix
+    in >> n.middle_name;
+//fixx
     return in;
 }
 //overloader function for << operator

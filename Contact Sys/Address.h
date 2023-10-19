@@ -29,7 +29,7 @@ public:
     void setZip(string zp);
     
     friend ostream& operator<<(ostream& out, Address& a);
-    friend istream& operator<<(istream& out, Address& a);
+    friend istream& operator>>(istream& out, Address& a);
     
     
 private:

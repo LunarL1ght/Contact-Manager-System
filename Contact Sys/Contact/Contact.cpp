@@ -28,7 +28,6 @@ Contact::Contact(Contact &c)
     address = c.getAddress();
     phone = c.getPhone();
 }
-
 void Contact::showContact()
 {
     name.showName();
@@ -38,35 +37,12 @@ void Contact::showContact()
 //overloader function for >> operator
 istream& operator>>(istream& in, Contact& c)
 {
-    string str;
-    cout << "Enter First Name: ";
-    getline(in, str);
-    c.getName().setfName(str);
-    cout << "Enter Last Name: ";
-    getline(in, str);
-    c.getName().setlName(str);
-    cout << "Enter Middle Name: ";
-    getline(in, str);
-    c.getName().setmName(str);
+    in >> c.name;
     
-    cout << "Enter Street Address: ";
-    getline(in,str);
-    c.getAddress().setStreetAddress(str);
-    
-    cout << "Enter State (Abbreviation): ";
-    getline(in,str);
-    c.getAddress().setState(str);
-    
-    cout << "Enter Zip: ";
-    getline(in, str);
-    c.getAddress().setZip(str);
+    in >> c.address;
     
     cout << "Enter Phone: ";
-    getline(in,str);
-    c.setPhone(str);
-    
-    
-    
+    in >> c.phone;
     return in;
 }
 //overloader function for << operator
@@ -84,4 +60,12 @@ void Contact::setName(Name n){name = n;}
 
 Address Contact::getAddress(){return address;}
 void Contact::setAddress(Address addy){address = addy;}
+
+int Contact::totalCt = 0;
+
+void Contact::setIdentifier()
+{
+    totalCt++;
+    identifier = totalCt;
+}
 

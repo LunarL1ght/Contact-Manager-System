@@ -18,7 +18,9 @@ int main()
     Contact myContact(name, address, "785-851-6299");
     
     cout << myContact;
+    
     cin >> myContact;
+    
     cout << myContact;
     return 0;
 }

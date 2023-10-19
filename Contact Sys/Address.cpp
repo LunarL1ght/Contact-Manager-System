@@ -38,16 +38,12 @@ void Address::showAddress()
 //overloader function for >> operator
 istream& operator>>(istream& in, Address& a)
 {
-    string str;
     cout << "Enter Street Address: ";
-    getline(in,str);
-    a.setStreetAddress(str);
+    in >> a.streetAddress;
     cout << "Enter State (Abbreviatation): ";
-    getline(in,str);
-    a.setState(str);
+    in >> a.state;
     cout << "Enter Zip: ";
-    getline(in,str);
-    a.setZip(str);
+    in >> a.zip;
     return in;
 }
 //overloader function for << operator

@@ -34,9 +34,14 @@ public:
     
     friend ostream& operator<<(ostream& out, Contact& c);
     friend istream& operator>>(istream& in, Contact& c);
+    
+    static int totalCt;
 private:
     string phone;
     Name name;
     Address address;
+    int identifier;
+    
+    void setIdentifier();
     
 };

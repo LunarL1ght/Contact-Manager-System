@@ -29,7 +29,7 @@ class Name
         void showName();
     
         friend ostream& operator<<(ostream& out, Name& n);
-        friend istream& operator<<(istream& out, Name& n);
+        friend istream& operator>>(istream& out, Name& n);
     
     private:
         string last_name;
