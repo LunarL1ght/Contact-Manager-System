@@ -32,6 +32,8 @@ public:
     string getPhone();
     void setPhone(string num);
     
+    int getIdentifier();
+    
     friend ostream& operator<<(ostream& out, Contact& c);
     friend istream& operator>>(istream& in, Contact& c);
     
