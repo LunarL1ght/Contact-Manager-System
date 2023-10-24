@@ -17,10 +17,5 @@ int main()
     Address address("9908 N Willow Ave.", "MO", "64157");
     Contact myContact(name, address, "785-851-6299");
     
-    cout << myContact;
-    
-    cin >> myContact;
-    
-    cout << myContact;
     return 0;
 }

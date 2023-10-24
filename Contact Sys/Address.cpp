@@ -49,7 +49,7 @@ istream& operator>>(istream& in, Address& a)
 //overloader function for << operator
 ostream& operator<<(ostream& out, Address& a)
 {
-    out << a.getStreetAddress() << endl << a.getState() << "  " << a.getZip() << endl;
+    out << a.streetAddress << endl << a.state << "  " << a.zip << endl;
     return out;
 }
 //getter methods

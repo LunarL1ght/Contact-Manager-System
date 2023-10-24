@@ -33,7 +33,7 @@ public:
     void setPhone(string num);
     
     int getIdentifier();
-    
+    void setIdentifier();
     friend ostream& operator<<(ostream& out, Contact& c);
     friend istream& operator>>(istream& in, Contact& c);
     
@@ -44,6 +44,6 @@ private:
     Address address;
     int identifier;
     
-    void setIdentifier();
+
     
 };

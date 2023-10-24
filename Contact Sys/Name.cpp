@@ -37,20 +37,20 @@ istream& operator>>(istream& in, Name& n)
     cout << "First Name: ";
     in >> n.first_name;
 
-//fixx
+
     cout << "Last Name: ";
     in >> n.last_name;
 
-//fixx
+
     cout << "Middle Name: ";
     in >> n.middle_name;
-//fixx
+
     return in;
 }
 //overloader function for << operator
 ostream &operator<<(ostream& out, Name& n)
 {
-    out << n.getlName() << ", " << n.getfName() << " " << n.getmName().substr(0,1) << "." << endl;
+    out << n.last_name << ", " << n.first_name << " " << n.middle_name.substr(0,1) << "." << endl;
     return out;
 }
 
@@ -62,7 +62,7 @@ string Name::getlName(){return last_name;}
 void Name::setfName(string name){first_name = name;}
 void Name::setmName(string name){middle_name = name;}
 void Name::setlName(string name){last_name = name;}
-
+//show name
 void Name::showName()
 {
     cout << last_name << ", " << first_name << " " << middle_name.substr(0,1) << "." << endl;

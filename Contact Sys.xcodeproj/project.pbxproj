@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2625DA272AE85A4400E73905 /* Contact Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2625DA262AE85A4400E73905 /* Contact Manager.cpp */; };
 		266EAC382ACF14C100E68AEC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC372ACF14C100E68AEC /* main.cpp */; };
 		266EAC412ACF312E00E68AEC /* Name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC402ACF312E00E68AEC /* Name.cpp */; };
 		266EAC442ACF4E5E00E68AEC /* Address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC432ACF4E5E00E68AEC /* Address.cpp */; };
 		266EAC482ACF575800E68AEC /* Contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266EAC472ACF575800E68AEC /* Contact.cpp */; };
-		266F4A322ADCE9880019E508 /* ContactManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266F4A312ADCE9880019E508 /* ContactManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2625DA262AE85A4400E73905 /* Contact Manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Contact Manager.cpp"; sourceTree = "<group>"; };
+		2625DA282AE85A5400E73905 /* ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
 		266EAC342ACF14C100E68AEC /* Contact Sys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Contact Sys"; sourceTree = BUILT_PRODUCTS_DIR; };
 		266EAC372ACF14C100E68AEC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		266EAC3E2ACF30DE00E68AEC /* Name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
@@ -35,8 +37,6 @@
 		266EAC432ACF4E5E00E68AEC /* Address.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Address.cpp; sourceTree = "<group>"; };
 		266EAC462ACF574C00E68AEC /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		266EAC472ACF575800E68AEC /* Contact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Contact.cpp; sourceTree = "<group>"; };
-		266F4A2F2ADCE9540019E508 /* ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
-		266F4A312ADCE9880019E508 /* ContactManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContactManager.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 		266F4A302ADCE95B0019E508 /* ContactManager */ = {
 			isa = PBXGroup;
 			children = (
-				266F4A312ADCE9880019E508 /* ContactManager.cpp */,
-				266F4A2F2ADCE9540019E508 /* ContactManager.h */,
+				2625DA262AE85A4400E73905 /* Contact Manager.cpp */,
+				2625DA282AE85A5400E73905 /* ContactManager.h */,
 				266EAC492ACF576000E68AEC /* Contact */,
 			);
 			name = ContactManager;
@@ -175,9 +175,9 @@
 			files = (
 				266EAC482ACF575800E68AEC /* Contact.cpp in Sources */,
 				266EAC412ACF312E00E68AEC /* Name.cpp in Sources */,
-				266F4A322ADCE9880019E508 /* ContactManager.cpp in Sources */,
 				266EAC442ACF4E5E00E68AEC /* Address.cpp in Sources */,
 				266EAC382ACF14C100E68AEC /* main.cpp in Sources */,
+				2625DA272AE85A4400E73905 /* Contact Manager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
