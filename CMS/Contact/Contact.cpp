@@ -61,6 +61,9 @@ void Contact::setName(Name n){name = n;}
 Address Contact::getAddress(){return address;}
 void Contact::setAddress(Address addy){address = addy;}
 
+
+
+
 int Contact::getIdentifier()
 {
     return identifier;

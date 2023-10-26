@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		2625DA262AE85A4400E73905 /* Contact Manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Contact Manager.cpp"; sourceTree = "<group>"; };
 		2625DA282AE85A5400E73905 /* ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
-		266EAC342ACF14C100E68AEC /* Contact Sys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Contact Sys"; sourceTree = BUILT_PRODUCTS_DIR; };
+		266EAC342ACF14C100E68AEC /* CMS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CMS; sourceTree = BUILT_PRODUCTS_DIR; };
 		266EAC372ACF14C100E68AEC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		266EAC3E2ACF30DE00E68AEC /* Name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
 		266EAC402ACF312E00E68AEC /* Name.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Name.cpp; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		266EAC2B2ACF14C100E68AEC = {
 			isa = PBXGroup;
 			children = (
-				266EAC362ACF14C100E68AEC /* Contact Sys */,
+				266EAC362ACF14C100E68AEC /* CMS */,
 				266EAC352ACF14C100E68AEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,18 +61,18 @@
 		266EAC352ACF14C100E68AEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				266EAC342ACF14C100E68AEC /* Contact Sys */,
+				266EAC342ACF14C100E68AEC /* CMS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		266EAC362ACF14C100E68AEC /* Contact Sys */ = {
+		266EAC362ACF14C100E68AEC /* CMS */ = {
 			isa = PBXGroup;
 			children = (
 				266EAC372ACF14C100E68AEC /* main.cpp */,
 				266F4A302ADCE95B0019E508 /* ContactManager */,
 			);
-			path = "Contact Sys";
+			path = CMS;
 			sourceTree = "<group>";
 		};
 		266EAC3F2ACF30F600E68AEC /* Name */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		266EAC332ACF14C100E68AEC /* Contact Sys */ = {
+		266EAC332ACF14C100E68AEC /* CMS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys" */;
+			buildConfigurationList = 266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "CMS" */;
 			buildPhases = (
 				266EAC302ACF14C100E68AEC /* Sources */,
 				266EAC312ACF14C100E68AEC /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = "Contact Sys";
+			name = CMS;
 			productName = "Contact Sys 1";
-			productReference = 266EAC342ACF14C100E68AEC /* Contact Sys */;
+			productReference = 266EAC342ACF14C100E68AEC /* CMS */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys" */;
+			buildConfigurationList = 266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "CMS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				266EAC332ACF14C100E68AEC /* Contact Sys */,
+				266EAC332ACF14C100E68AEC /* CMS */,
 			);
 		};
 /* End PBXProject section */
@@ -316,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "Contact Sys" */ = {
+		266EAC2F2ACF14C100E68AEC /* Build configuration list for PBXProject "CMS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266EAC392ACF14C100E68AEC /* Debug */,
@@ -325,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "Contact Sys" */ = {
+		266EAC3B2ACF14C100E68AEC /* Build configuration list for PBXNativeTarget "CMS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				266EAC3C2ACF14C100E68AEC /* Debug */,

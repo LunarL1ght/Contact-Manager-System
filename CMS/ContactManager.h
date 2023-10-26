@@ -20,7 +20,7 @@ public:
     vector <Contact> getContact(string l_name);
     void addContact();
     void showContacts();
-    void saveContacts(const ostream& out);
+    void saveContacts(ostream& out);
     void loadContacts(istream& in);
     
 private:

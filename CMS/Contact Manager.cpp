@@ -63,11 +63,38 @@ void ContactManager::showContacts()
         contacts[i].showContact();
     }
 }
-void ContactManager::saveContacts(const ostream& out)
+void ContactManager::saveContacts(ostream& out)
 {
+    for(int i = 0; i < contacts.size(); i++)
+    {
+        out << contacts[i].getName().getfName();
+    }
     
 }
 void ContactManager::loadContacts(istream& in)
 {
+    string l_name;
+    string f_name;
+    string m_name;
+    string address;
+    string state;
+    string zip;
+    string number;
+    
+    
+    for (int i = 0; i < contacts.size(); i++)
+    {
+        in >> l_name >> f_name >> m_name >> address >> state >> zip >> number;
+        Contact c(l_name, f_name, m_name, address, state, zip, number);
+        
+        if (c.getIdentifier() == 0)
+        {
+            c.setIdentifier();
+        }
+        contacts.push_back(c);
+        
+        
+        
+    }
     
 }
